@@ -39,7 +39,7 @@ async function getRandomBlock(){
 
 }
 async function logRollResult(characterName, block, diceResult, attribute){
-    console.log(`${characterName} 🎲 rolou um dados de ${block} ${diceResult} + ${attribute} = ${
+    console.log(`${characterName} 🎲 rolou um dado de ${block} ${diceResult} + ${attribute} = ${
         diceResult + attribute
     }`);
 
@@ -142,10 +142,25 @@ async function playRaceEngine(character1, character2){
     }
     }   
 
+async function declareWinner(character1, character2){
+    console.log("Resultado Final:");
+    console.log(`${character1.NOME}: ${character1.PONTOS} ponto(s)`);
+    console.log(`${character2.NOME}: ${character2.PONTOS} ponto(s)`);
+
+    if(character1.PONTOS > character2.PONTOS){
+        console.log(`\n ${character1.NOME} venceu a corrida! Parabéns!🏆`);
+    }else if(character2.PONTOS > character1.PONTOS){
+        console.log(`\n ${character2.NOME} venceu a corrida! Parabéns!🏆`);
+    }else{
+        console.log(`A corrida terminou em empate`);
+
+    }
+}
 
 (async function main(){
     console.log(`🚥🎌🚨 Corrida entre ${player1.NOME} e ${player2.NOME} começando...\n`);
 
     await playRaceEngine(player1, player2);
+    await declareWinner(player1, player2);
 })();
 
