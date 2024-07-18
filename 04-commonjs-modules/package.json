@@ -1,0 +1,12 @@
+{
+  "name": "04-commonjs-modules",
+  "version": "1.0.0",
+  "description": "* Códigos tendem a ser Monstrinhos.\r * É normal ter muitas pessoas editando o mesmo código",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
