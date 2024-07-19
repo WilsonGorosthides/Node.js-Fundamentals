@@ -16,8 +16,12 @@
 ## TIPOS DE MÓDULOS
 <img src="img/TIPOSDEMODULO.png">
 
+
+
 ## DIFERENÇA
 <img src="img/DIFERENCA.png">
+
+
 
 
 
